@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    header {
+      border: 1px solid red;
+    }
+    #conteudo-central {
+      display: flex;
+      flex-direction: row;
+    }
+    #conteudo-central nav {
+      flex-basis: 150px;
+      border: 1px solid red;
+    }
+    #conteudo-central main {
+      flex-grow: 1;
+      border: 1px solid red;
+    }
+    footer {
+      border: 1px solid red;
+    }
+
+    @media screen and (max-width: 600px){
+      #conteudo-central {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    header
+  </header>
+
+  <div id="conteudo-central">
+    <nav>
+      nav
+    </nav>
+    
+    <main>
+      main
+    </main>
+  </div>
+
+  <footer>
+    footer
+  </footer>
+
+</body>
+</html>
