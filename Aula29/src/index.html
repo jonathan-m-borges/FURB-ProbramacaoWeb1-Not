@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Parcel - Cadastro de Alunos</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h1>Demo Parcel - Cadastro de Alunos</h1>
+
+    <section id="form-alunos">
+        <h2>Formulário</h2>
+        <p>
+            <label for="nome">Nome:</label>
+            <input name="nome" id="nome">
+        </p>
+        <p>
+            <label for="nota">Nota:</label>
+            <input name="nota" type="number" id="nota">
+        </p>
+        <footer>
+            <button id="btn-salvar">Adicionar</button>
+        </footer>
+    </section>
+
+    <section id="lista-alunos">
+        <h2>Listagem de Alunos</h2>
+        <table>
+            <thead>
+                <th>#</th>
+                <th>Aluno</th>
+                <th>Nota</th>
+            </thead>
+            <tbody id="tbody-alunos">
+            </tbody>
+        </table>
+    </section>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
